@@ -8,10 +8,19 @@ body {
     text-align: center;
 }
 
-h2, h3 {
+h2 {
+    font-family: 'Slabo 27px';
+}
+
+h3 {
     margin: 0;
-    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 700;
+}
+
+body p span {
+    color: #F0F8FF;
+    font-style: oblique;
 }
 
 .botao {
@@ -28,9 +37,9 @@ NAVEGAÇÃO
 */
 
 nav {
-    background-image: url('img/fundo2.jpg');
+    background-image: url('img/fundo3.jpg');
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: center;
     background-color: #4d4d4d;
 }
@@ -110,6 +119,10 @@ SOBRE
     color: #f1f1f1;
 }
 
+#sobre h2 {
+    color: #F0F8FF;
+}
+
 #sobre p {
     margin-bottom: 2.5em;
     max-width: 1000px;
@@ -160,6 +173,7 @@ HABILIDADES
 
 #skills h2 {
     
+    color: #F0F8FF;
     text-align: center;
 }
 
@@ -168,24 +182,6 @@ HABILIDADES
     text-align: center;
 }
 
-/*
-PORTFOLIO
-*/
-
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-
-#portfolio h2 {
-    margin-bottom: 20px;
-}
-    
-#portfolio img {
-    width: 100%;
-}
 
 /*
 CONTATO
@@ -215,7 +211,7 @@ footer {
 MEDIA QUERIES
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     /*
     NAVEGAÇÃO
     */
@@ -285,27 +281,9 @@ SKILLS
     }
     
     
-    /*
-    PORTFOLIO
-    */
-    
-    #portfolio {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    #portfolio h2 {
-        width: 100%;
-        text-align: center;
-    }
-    
-    #portfolio img {
-        width: 33.3333333333%;
-    }
-    
-    /*
-    CONTATO
-    */
+/*
+CONTATO
+*/
     
     #contato {
         flex-direction: row;
